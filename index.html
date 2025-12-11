@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Pessoal</title>
+  <link rel="icon" href="img/toy png.png" type="image/x-icon" />
+  <style>
+ 
+    body {
+      background-color: #353535;
+      font-family: 'Arial', Helvetica, sans-serif;
+      background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGR6MHhyZnY1MXplaDQydTlnNml0NTg3aHU0ZjBnajd6aWZhNzhuMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pOhqA8rf4IwuDoM0QI/giphy.gif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      display: flex;
+      font-size: 20px;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #ffffff;
+    }
+
+
+header {
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
+  height: 150px;
+  width: 100%;
+  box-sizing: border-box;
+  position: center;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+header img {
+  height: 100px;
+  object-fit: contain;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  transition:0.3s;
+}
+
+
+nav ul li a:hover {
+      background-color: #4c91c9;
+    }
+
+
+
+
+.bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+
+    .foto {
+      width: 550px;
+      height: 550px;
+      border-radius: 50%;
+      margin-bottom: -120px;
+      position: relative;
+      top: -150px;
+      left: 720px;
+      top: 310px;
+    }
+    .trajetoria{
+        color: #ffffff;
+        font-size: 1.3rem;
+        margin-bottom: 0px;
+        width: 1550px;
+        height: 550px;
+        left:0;
+    }
+    .logo {
+      display: flex;
+      margin-bottom: -45px;
+      left: 750px;
+      top: 80px;
+      width: 150px;
+      height: auto;
+    }
+
+
+ 
+    h2 {
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+
+
+    .botoes {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+
+    button:hover {
+      background-color: #d8d8d8;
+    }
+
+
+    footer {
+      background-color:  #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px 0;
+      font-weight: bold;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+ <header>
+  <div class="logo">
+<img src="IMG/Logo GS.png" alt="Logo GS"> </a>
+
+
+
+
+<video autoplay muted loop id="bg-video">
+  <source src="seu-video.mp4" type="video/mp4">
+</video>
+
+
+
+
+
+
+  </div>
+  <nav>
+    <ul>
+        <li><a href="index.html">Trajetória</a></li>
+        <li><a href="INSTITUCIONAL.html">Certificados</a></li>
+        <li><a href="CADASTRODEPEDIDOS.html">Hard Skills</a></li>
+        <li><a href="MINHACONTA.HTML">Contatos</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+  <main>
+    <img src="IMG/avatar.avif" alt="Foto" class="foto">
+  </main>
+
+
+<center>
+  <div class="trajetoria">
+    <h1>Gustavo Santana de Oliveira</h1>
+  </div>
+</center>
+
+
+
+
+<footer>
+  <p>© 2026 Gustavo Santana-Portfólio | Todos os direitos reservados.</p>
+</footer>
+
+
+</body>
+</html>
+
+
