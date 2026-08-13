@@ -813,6 +813,15 @@
     transform: translateY(-12px) scale(1.025) !important;
     box-shadow: 0 25px 60px rgba(0, 243, 255, 0.12) !important;
   }
+
+  /* Remove o sublinhado, mantém as cores originais e faz o link ocupar o card todo */
+.cert-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 </style>
 </head>
 <body>
@@ -890,7 +899,7 @@
       <div class="photo-glow-wrap">
         <div class="glow-effect"></div>
         <div class="photo-frame">
-          <img src="IMG/avatar.avif" alt="Foto de Gustavo Santana de Oliveira"
+          <img src="IMG/foto2.jpeg" alt="Foto de Gustavo Santana de Oliveira"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div class="placeholder" style="display:none;">Coloque sua foto em<br><strong>IMG/avatar.avif</strong></div>
         </div>
@@ -938,19 +947,15 @@
       <div class="cards-grid">
         <article class="card-hover">
           <div class="proj-thumb">
-            <img src="IMG/projeto-1.png" alt="Captura do projeto 1"
+            <img src="IMG/Eco-Mercado-image.png" alt="Captura do projeto 1"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="ph-label" style="display:none;">IMG/projeto-1.png</span>
           </div>
           <div class="card-hover-body">
-            <h3>Nome do projeto 1</h3>
-            <p>Uma frase curta explicando o que o projeto faz e qual problema resolve.</p>
+            <h3>Eco Mercado</h3>
+            <p>Este Projeto tem como objetivo melhorar a gestão do controle de estoque e logística de um mercado fictício com problemas internos. </p>
             <div class="tag-row">
               <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JS</span>
-            </div>
-            <div class="card-links">
-              <a href="#">↗ Ver projeto</a>
-              <a href="#">⌥ Código</a>
             </div>
           </div>
         </article>
@@ -967,28 +972,20 @@
             <div class="tag-row">
               <span class="pill">Python</span><span class="pill">API</span>
             </div>
-            <div class="card-links">
-              <a href="#">↗ Ver projeto</a>
-              <a href="#">⌥ Código</a>
-            </div>
           </div>
         </article>
 
         <article class="card-hover">
           <div class="proj-thumb">
-            <img src="IMG/projeto-3.png" alt="Captura do projeto 3"
+            <img src="IMG/Eco-Mercado-image.png" alt="Captura do projeto 3"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="ph-label" style="display:none;">IMG/projeto-3.png</span>
           </div>
           <div class="card-hover-body">
             <h3>Nome do projeto 3</h3>
-            <p>Uma frase curta explicando o que o projeto faz e qual problema resolve.</p>
+            <p>Este Projeto tem como objetivo melhorar a gestão do controle de estoque e logística de um mercado fictício com problemas internos. <br></p>
             <div class="tag-row">
               <span class="pill">Figma</span><span class="pill">UI/UX</span>
-            </div>
-            <div class="card-links">
-              <a href="#">↗ Ver projeto</a>
-              <a href="#">⌥ Código</a>
             </div>
           </div>
         </article>
@@ -1004,224 +1001,284 @@
       <div class="cards-grid">
         <!-- 01 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">01</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2026</span>
+          <a href="https://drive.google.com/file/d/133vNjsog4TVYn9NJedHNDTSgK8xFUc3o/view?usp=drive_open" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">01</div>
+              <div>
+                <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2026</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 02 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">02</div>
-            <div>
-              <h3>Design UX e UI</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2025</span>
+          <a href="https://drive.google.com/file/d/133vNjsog4TVYn9NJedHNDTSgK8xFUc3o/view" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">02</div>
+              <div>
+                <h3>Design <br>UX e UI</h3>
+                <p>SENAI - Manuel <br> Garcia Filho <br>  </p>
+                <span class="cert-year"><br>2025</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 03 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">03</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2025</span>
+          <a href="https://drive.google.com/file/d/1db03djEACOd5fgly4koGttnho2smmski/view" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">03</div>
+              <div>
+                <h3>Competência Transversal - Segurança no Trabalho</h3>
+                <p>SENAI - Manuel <br> Garcia Filho <br>  </p>
+                <span class="cert-year">2025</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 04 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">04</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2024</span>
+          <a href="https://drive.google.com/file/d/1O2KUlqfazpmaywKTQeK_AC1Pak7hXnkD/view" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">04</div>
+              <div>
+                <h3>Desvendando a Descarbonização</h3>
+                <p>SENAI - Manuel <br> Garcia Filho</p>
+                <span class="cert-year">2024</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 05 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">05</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2024</span>
+          <a href="certificados/certificado-05.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">05</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2024</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 06 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">06</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2024</span>
+          <a href="certificados/certificado-06.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">06</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2024</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 07 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">07</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2024</span>
+          <a href="certificados/certificado-07.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">07</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2024</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 08 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">08</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2024</span>
+          <a href="certificados/certificado-08.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">08</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2024</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 09 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">09</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2023</span>
+          <a href="certificados/certificado-09.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">09</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2023</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 10 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">10</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2023</span>
+          <a href="certificados/certificado-10.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">10</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2023</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 11 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">11</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2023</span>
+          <a href="certificados/certificado-11.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">11</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2023</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 12 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">12</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2023</span>
+          <a href="certificados/certificado-12.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">12</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2023</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 13 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">13</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2023</span>
+          <a href="certificados/certificado-13.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">13</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2023</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 14 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">14</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2022</span>
+          <a href="certificados/certificado-14.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">14</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2022</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 15 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">15</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2022</span>
+          <a href="certificados/certificado-15.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">15</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2022</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 16 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">16</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2022</span>
+          <a href="certificados/certificado-16.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">16</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2022</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 17 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">17</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2022</span>
+          <a href="certificados/certificado-17.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">17</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2022</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 18 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">18</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2021</span>
+          <a href="certificados/certificado-18.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">18</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2021</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 19 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">19</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2021</span>
+          <a href="certificados/certificado-19.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">19</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2021</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
         <!-- 20 -->
         <div class="card-hover">
-          <div class="cert">
-            <div class="cert-badge">20</div>
-            <div>
-              <h3>Nome do certificado</h3>
-              <p>Instituição responsável pela emissão</p>
-              <span class="cert-year">2021</span>
+          <a href="certificados/certificado-20.pdf" target="_blank" class="cert-link">
+            <div class="cert">
+              <div class="cert-badge">20</div>
+              <div>
+                <h3>Nome do certificado</h3>
+                <p>Instituição responsável pela emissão</p>
+                <span class="cert-year">2021</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
+
       </div>
     </div>
   </section>
@@ -1236,48 +1293,56 @@
           <div class="skills-group">
             <h3>Linguagens</h3>
             <div class="skill-row">
-              <div class="skill-top"><span>HTML &amp; CSS</span><span>90%</span></div>
-              <div class="skill-bar"><i style="width:90%"></i></div>
+              <div class="skill-top"><span>HTML &amp; CSS</span><span></span></div>
+
             </div>
             <div class="skill-row">
-              <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
-              <div class="skill-bar"><i style="width:70%"></i></div>
+              <div class="skill-top"><span>JavaScript</span><span></span></div>
             </div>
             <div class="skill-row">
-              <div class="skill-top"><span>Python</span><span>60%</span></div>
-              <div class="skill-bar"><i style="width:60%"></i></div>
+              <div class="skill-top"><span>Python</span><span></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span>Kotlin</span><span></span></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top"><span>PHP</span><span></span></div>
             </div>
           </div>
 
           <div class="skills-group">
             <h3>Ferramentas</h3>
             <div class="skill-row">
-              <div class="skill-top"><span>Git &amp; GitHub</span><span>75%</span></div>
-              <div class="skill-bar"><i style="width:75%"></i></div>
+              <div class="skill-top"><span>Git &amp; GitHub</span><span></span></div>
             </div>
             <div class="skill-row">
-              <div class="skill-top"><span>Figma</span><span>65%</span></div>
-              <div class="skill-bar"><i style="width:65%"></i></div>
+              <div class="skill-top"><span>Figma</span><span></span></div>
             </div>
             <div class="skill-row">
-              <div class="skill-top"><span>VS Code</span><span>85%</span></div>
-              <div class="skill-bar"><i style="width:85%"></i></div>
+              <div class="skill-top"><span>VS Code</span><span></span></div>
+            </div><div class="skill-row">
+              <div class="skill-top"><span>Miro</span><span></span></div>
+            </div><div class="skill-row">
+              <div class="skill-top"><span>Canva</span><span></span></div>
+            </div><div class="skill-row">
+              <div class="skill-top"><span>Excel</span><span></span></div>
+            </div><div class="skill-row">
+              <div class="skill-top"><span>World</span><span></span></div>
+            </div><div class="skill-row">
+              <div class="skill-top"><span>Trello</span><span></span></div>
             </div>
           </div>
 
           <div class="skills-group">
             <h3>Outros</h3>
             <div class="skill-row">
-              <div class="skill-top"><span>Banco de dados</span><span>55%</span></div>
-              <div class="skill-bar"><i style="width:55%"></i></div>
+              <div class="skill-top"><span>Banco de dados</span><span></span></div>
             </div>
             <div class="skill-row">
-              <div class="skill-top"><span>Redes</span><span>50%</span></div>
-              <div class="skill-bar"><i style="width:50%"></i></div>
+              <div class="skill-top"><span>Redes</span><span></span></div>
             </div>
             <div class="skill-row">
-              <div class="skill-top"><span>Inglês técnico</span><span>70%</span></div>
-              <div class="skill-bar"><i style="width:70%"></i></div>
+              <div class="skill-top"><span>IOT</span><span></span></div>
             </div>
           </div>
         </div>
@@ -1294,21 +1359,36 @@
         <a href="mailto:seuemail@exemplo.com" class="contact-email">gustavo.soliveira0103@gmail.com</a>
 
         <div class="social-row">
-          <a href="#" aria-label="LinkedIn" title="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.94 6.5a1.44 1.44 0 1 1 0-2.88 1.44 1.44 0 0 1 0 2.88ZM5.5 8.5h2.88v10H5.5v-10Zm5.28 0h2.76v1.37h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.9 3.44 4.38v5.73h-2.88v-5.08c0-1.21-.02-2.77-1.69-2.77-1.69 0-1.95 1.32-1.95 2.68v5.17h-2.44v-10Z"/></svg>
-          </a>
-          <a href="https://mail.google.com/mail/u/0/#inbox" aria-label="Email" title="Email">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-    <rect width="20" height="16" x="2" y="4" rx="2"/>
-    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-  </svg>
-</a>
-          <a href="#" aria-label="Instagram" title="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.8" fill="currentColor" stroke="none"/></svg>
-          </a>
-          <a href="#" aria-label="WhatsApp" title="WhatsApp">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12a8 8 0 1 1-3.6-6.66L20 4l-1.1 3.9A7.96 7.96 0 0 1 20 12Z"/><path d="M8.5 9.5c.2 2.6 2.4 4.8 5 5 .8.05 1-.5 1-.9v-.9c-1.1.1-2.3-.3-2.3-.3l-.7-1.4s.4-.3.6-.7c.1-.3 0-.6-.1-.8l-.7-1.5c-.2-.4-.5-.4-.8-.4h-.7c-.3 0-.8.1-1 .5-.3.5-.4 1.4-.3 2.4Z"/></svg>
-          </a>
+  <!-- 1. GITHUB (Feito na mesma geometria do seu projeto) -->
+  <a href="#" aria-label="GitHub" title="GitHub">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+    </svg>
+  </a>
+
+  <!-- 2. EMAIL (Mantido o seu) -->
+  <a href="https://mail.google.com/mail/u/0/#inbox" aria-label="Email" title="Email">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect width="20" height="16" x="2" y="4" rx="2"/>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+    </svg>
+  </a>
+
+  <!-- 3. LINKEDIN (Seu ícone original que estava na 1ª posição) -->
+  <a href="#" aria-label="LinkedIn" title="LinkedIn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <path d="M6.94 6.5a1.44 1.44 0 1 1 0-2.88 1.44 1.44 0 0 1 0 2.88ZM5.5 8.5h2.88v10H5.5v-10Zm5.28 0h2.76v1.37h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.9 3.44 4.38v5.73h-2.88v-5.08c0-1.21-.02-2.77-1.69-2.77-1.69 0-1.95 1.32-1.95 2.68v5.17h-2.44v-10Z"/>
+    </svg>
+  </a>
+
+  <!-- 4. WHATSAPP (Mantido o seu) -->
+  <a href="#" aria-label="WhatsApp" title="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <path d="M20 12a8 8 0 1 1-3.6-6.66L20 4l-1.1 3.9A7.96 7.96 0 0 1 20 12Z"/>
+      <path d="M8.5 9.5c.2 2.6 2.4 4.8 5 5 .8.05 1-.5 1-.9v-.9c-1.1.1-2.3-.3-2.3-.3l-.7-1.4s.4-.3.6-.7c.1-.3 0-.6-.1-.8l-.7-1.5c-.2-.4-.5-.4-.8-.4h-.7c-.3 0-.8.1-1 .5-.3.5-.4 1.4-.3 2.4Z"/>
+    </svg>
+  </a>
+</div>
         </div>
       </div>
     </div>
