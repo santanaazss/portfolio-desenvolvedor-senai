@@ -386,10 +386,42 @@
   }
 
   /* ================= BANNER / HERO ================= */
-  .banner{
-    padding:110px 0 80px;
-    background:radial-gradient(circle at center, rgba(0, 243, 255, 0.1) 0%, transparent 70%);
-  }
+  .banner {
+  position: relative;
+  padding: 110px 0 80px;
+}
+
+/* O efeito do fundo fica isolado aqui, sem afetar o texto e botões */
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0; /* Ocupa todo o espaço da .banner */
+  z-index: 0;
+  
+  /* Gradiente radial da luz */
+  background: radial-gradient(circle at center, rgba(0, 243, 255, 0.15) 0%, transparent 70%);
+  
+  /* Mascara que apaga só a borda de baixo do fundo */
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  
+  pointer-events: none; /* Garante que não interfere nos cliques */
+}
+
+/* Garante que os botões e textos fiquem por cima do fundo */
+.banner .container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+}
+  
+  /* Faz a parte inferior do elemento esvanecer até ficar 100% transparente */
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
   .banner .container{
     display:grid;
     grid-template-columns:1.15fr 0.85fr;
@@ -970,6 +1002,7 @@
       <p class="section-descricao">Cursos e certificações concluídos ao longo da minha formação.</p>
 
       <div class="cards-grid">
+        <!-- 01 -->
         <div class="card-hover">
           <div class="cert">
             <div class="cert-badge">01</div>
@@ -980,16 +1013,18 @@
             </div>
           </div>
         </div>
+        <!-- 02 -->
         <div class="card-hover">
           <div class="cert">
             <div class="cert-badge">02</div>
             <div>
-              <h3>Nome do certificado</h3>
+              <h3>Design UX e UI</h3>
               <p>Instituição responsável pela emissão</p>
               <span class="cert-year">2025</span>
             </div>
           </div>
         </div>
+        <!-- 03 -->
         <div class="card-hover">
           <div class="cert">
             <div class="cert-badge">03</div>
@@ -1000,6 +1035,7 @@
             </div>
           </div>
         </div>
+        <!-- 04 -->
         <div class="card-hover">
           <div class="cert">
             <div class="cert-badge">04</div>
@@ -1007,6 +1043,182 @@
               <h3>Nome do certificado</h3>
               <p>Instituição responsável pela emissão</p>
               <span class="cert-year">2024</span>
+            </div>
+          </div>
+        </div>
+        <!-- 05 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">05</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+        </div>
+        <!-- 06 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">06</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+        </div>
+        <!-- 07 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">07</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+        </div>
+        <!-- 08 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">08</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+        </div>
+        <!-- 09 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">09</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2023</span>
+            </div>
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">10</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2023</span>
+            </div>
+          </div>
+        </div>
+        <!-- 11 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">11</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2023</span>
+            </div>
+          </div>
+        </div>
+        <!-- 12 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">12</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2023</span>
+            </div>
+          </div>
+        </div>
+        <!-- 13 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">13</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2023</span>
+            </div>
+          </div>
+        </div>
+        <!-- 14 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">14</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2022</span>
+            </div>
+          </div>
+        </div>
+        <!-- 15 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">15</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2022</span>
+            </div>
+          </div>
+        </div>
+        <!-- 16 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">16</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2022</span>
+            </div>
+          </div>
+        </div>
+        <!-- 17 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">17</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2022</span>
+            </div>
+          </div>
+        </div>
+        <!-- 18 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">18</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2021</span>
+            </div>
+          </div>
+        </div>
+        <!-- 19 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">19</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2021</span>
+            </div>
+          </div>
+        </div>
+        <!-- 20 -->
+        <div class="card-hover">
+          <div class="cert">
+            <div class="cert-badge">20</div>
+            <div>
+              <h3>Nome do certificado</h3>
+              <p>Instituição responsável pela emissão</p>
+              <span class="cert-year">2021</span>
             </div>
           </div>
         </div>
@@ -1085,9 +1297,12 @@
           <a href="#" aria-label="LinkedIn" title="LinkedIn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.94 6.5a1.44 1.44 0 1 1 0-2.88 1.44 1.44 0 0 1 0 2.88ZM5.5 8.5h2.88v10H5.5v-10Zm5.28 0h2.76v1.37h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.9 3.44 4.38v5.73h-2.88v-5.08c0-1.21-.02-2.77-1.69-2.77-1.69 0-1.95 1.32-1.95 2.68v5.17h-2.44v-10Z"/></svg>
           </a>
-          <a href="#" aria-label="GitHub" title="GitHub">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-          </a>
+          <a href="https://mail.google.com/mail/u/0/#inbox" aria-label="Email" title="Email">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="20" height="16" x="2" y="4" rx="2"/>
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+  </svg>
+</a>
           <a href="#" aria-label="Instagram" title="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.8" fill="currentColor" stroke="none"/></svg>
           </a>
