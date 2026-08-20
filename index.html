@@ -418,10 +418,7 @@
   align-items: center;
 }
   
-  /* Faz a parte inferior do elemento esvanecer até ficar 100% transparente */
-  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-}
+
   .banner .container{
     display:grid;
     grid-template-columns:1.15fr 0.85fr;
@@ -822,6 +819,103 @@
   width: 100%;
   height: 100%;
 }
+
+/* Container de fundo fixo */
+.ambient-glows {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Propriedades genéricas da mancha */
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px); /* Sufragem ultra suave */
+  opacity: 0.25;
+  animation: pulseGlow linear infinite alternate;
+  will-change: transform, opacity;
+}
+
+/* Cores do Sistema */
+.glow.cyan {
+  background: radial-gradient(circle, rgba(0,243,255,0.6) 0%, transparent 70%);
+}
+
+.glow.purple {
+  background: radial-gradient(circle, rgba(138,43,226,0.6) 0%, transparent 70%);
+}
+
+.glow.blue {
+  background: radial-gradient(circle, rgba(0,102,255,0.6) 0%, transparent 70%);
+}
+
+/* Posicionamentos e Tamanhos Diverso */
+.glow.top-left {
+  width: 45vw;
+  height: 45vw;
+  top: -10vw;
+  left: -10vw;
+  animation-duration: 8s;
+  animation-delay: 0s;
+}
+
+.glow.mid-right {
+  width: 50vw;
+  height: 50vw;
+  top: 25vh;
+  right: -15vw;
+  animation-duration: 11s;
+  animation-delay: 2s;
+}
+
+.glow.bottom-left {
+  width: 40vw;
+  height: 40vw;
+  bottom: -10vw;
+  left: 5vw;
+  animation-duration: 9s;
+  animation-delay: 4s;
+}
+
+.glow.center {
+  width: 35vw;
+  height: 35vw;
+  top: 40vh;
+  left: 30vw;
+  animation-duration: 13s;
+  animation-delay: 1s;
+}
+
+.glow.bottom-right {
+  width: 45vw;
+  height: 45vw;
+  bottom: -5vw;
+  right: 5vw;
+  animation-duration: 10s;
+  animation-delay: 3s;
+}
+
+/* Animação para acender, apagar e se mover suavemente */
+@keyframes pulseGlow {
+  0% {
+    opacity: 0.1;
+    transform: scale(0.85) translate(0, 0);
+  }
+  50% {
+    opacity: 0.45; /* Ponto máximo de brilho */
+    transform: scale(1.1) translate(20px, -15px);
+  }
+  100% {
+    opacity: 0.15;
+    transform: scale(0.9) translate(-15px, 20px);
+  }
+}
 </style>
 </head>
 <body>
@@ -857,6 +951,14 @@
   <div class="particle"></div>
   <div class="particle"></div>
   <div class="particle"></div>
+</div>
+
+<div class="ambient-glows" aria-hidden="true">
+  <div class="glow cyan top-left"></div>
+  <div class="glow purple mid-right"></div>
+  <div class="glow blue bottom-left"></div>
+  <div class="glow purple center"></div>
+  <div class="glow cyan bottom-right"></div>
 </div>
 
 <header>
